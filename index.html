@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,3 +39,45 @@
     <script src="main.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="atm-container">
+        <h2>ATM Simulator</h2>
+        <div id="account-selection">
+            <label for="account">Select Account:</label>
+            <select id="account" class="user">
+                <option value="0">Hugo</option>
+                <option value="1">Paula</option>
+                <option value="2">Luis</option>
+                <option value="3">Aylin</option>
+            </select>
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password">
+            <button onclick="login()">Login</button>
+            <p id="login-message"></p>
+        </div>
+        <div id="actions" style="display:none;">
+            <button onclick="checkBalance()">Check Balance</button>
+            <button onclick="showDeposit()">Deposit Amount</button>
+            <button onclick="showWithdraw()">Withdraw Amount</button>
+            <button onclick="logout()">Logout</button>
+            <div id="balance" style="display:none;"></div>
+            <div id="transaction" style="display:none;">
+                <input type="number" id="amount" placeholder="Enter Amount">
+                <button onclick="performTransaction()">Submit</button>
+                <p id="transaction-message"></p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+>>>>>>> 6b725f6ce013bcda8a13c776d3d3d20f3ae09ce9

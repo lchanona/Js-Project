@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(/assets/img/atm-machine-isolated-on-white-background-free-vector.jpg);
+    background-image: url(atm-machine-isolated-on-white-background-free-vector.jpg);
     background-color: #cccccc;
     height: 500px;
     background-position: center;
@@ -44,8 +44,11 @@ button:hover {
 .user {
     font-size: 20px;
 }
+<<<<<<< HEAD
 
 .box {
     width: auto;
     height: 30px;
 }
+=======
+>>>>>>> 6b725f6ce013bcda8a13c776d3d3d20f3ae09ce9
