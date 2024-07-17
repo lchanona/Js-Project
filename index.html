@@ -13,11 +13,12 @@
             <label for="account">Select Account:</label>
             <select id="account" class="user">
                 <option value="0">Hugo</option>
-                <option value="1">Paco</option>
+                <option value="1">Paula</option>
                 <option value="2">Luis</option>
-            </select>
-            <label for="password">Enter Password:</label>
-            <input type="password" id="password">
+                <option value="3">Aylin</option>
+            </select> <br>
+            <label for="pin">Enter pin:</label>
+            <input type="pin" id="pin" class="box">
             <button onclick="login()">Login</button>
             <p id="login-message"></p>
         </div>
@@ -28,7 +29,7 @@
             <button onclick="logout()">Logout</button>
             <div id="balance" style="display:none;"></div>
             <div id="transaction" style="display:none;">
-                <input type="number" id="amount" placeholder="Enter Amount">
+                <input type="number" id="amount" class="box" placeholder="Enter Amount">
                 <button onclick="performTransaction()">Submit</button>
                 <p id="transaction-message"></p>
             </div>

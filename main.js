@@ -1,23 +1,24 @@
 var accounts = [
-    { name: "Hugo", balance: 500, password: "1234" },
-    { name: "Paco", balance: 700, password: "5678" },
-    { name: "Luis", balance: 800, password: "6816" }
+    { name: "Hugo", balance: 500, pin: "1234" },
+    { name: "Paula", balance: 4500, pin: "5678" },
+    { name: "Luis", balance: 800, pin: "6816" },
+    { name: "Aylin", balance: 200, pin: "2108" }
 ];
 
 var currentAccount = null;
 
 function login() {
     var accountIndex = document.getElementById("account").value;
-    var password = document.getElementById("password").value;
+    var pin = document.getElementById("pin").value;
     var loginMessage = document.getElementById("login-message");
 
-    if (accounts[accountIndex].password === password) {
+    if (accounts[accountIndex].pin === pin) {
         currentAccount = accounts[accountIndex];
         document.getElementById("account-selection").style.display = "none";
         document.getElementById("actions").style.display = "block";
         loginMessage.textContent = "";
     } else {
-        loginMessage.textContent = "Incorrect password. Please try again.";
+        loginMessage.textContent = "Incorrect pin. Please try again.";
     }
 }
 
@@ -28,7 +29,7 @@ function logout() {
     document.getElementById("balance").style.display = "none";
     document.getElementById("transaction").style.display = "none";
     document.getElementById("login-message").textContent = "";
-    document.getElementById("password").value = "";
+    document.getElementById("pin").value = "";
 }
 
 function checkBalance() {
@@ -64,8 +65,8 @@ function performTransaction() {
     }
 
     if (transactionType === "deposit") {
-        if (currentAccount.balance + amount > 990) {
-            transactionMessage.textContent = "Cannot deposit. Balance cannot exceed $990.";
+        if (currentAccount.balance + amount > 5000) {
+            transactionMessage.textContent = "Cannot deposit. Balance cannot exceed $5000.";
         } else {
             currentAccount.balance += amount;
             transactionMessage.textContent = "Deposited: $" + amount + ". New Balance: $" + currentAccount.balance;

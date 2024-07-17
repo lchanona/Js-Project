@@ -36,6 +36,16 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #00a2ff; /* change background color on hover */
+    color: #333; /* change text color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow on hover */
+}
 .user {
     font-size: 20px;
+}
+
+.box {
+    width: auto;
+    height: 30px;
 }
