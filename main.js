@@ -1,7 +1,8 @@
 var accounts = [
     { name: "Hugo", balance: 500, password: "1234" },
-    { name: "Paco", balance: 700, password: "5678" },
-    { name: "Luis", balance: 800, password: "6816" }
+    { name: "Paula", balance: 4500, password: "5678" },
+    { name: "Luis", balance: 800, password: "6816" },
+    { name: "Aylin", balance: 200, password: "2108" }
 ];
 
 var currentAccount = null;
@@ -64,8 +65,8 @@ function performTransaction() {
     }
 
     if (transactionType === "deposit") {
-        if (currentAccount.balance + amount > 990) {
-            transactionMessage.textContent = "Cannot deposit. Balance cannot exceed $990.";
+        if (currentAccount.balance + amount > 5000) {
+            transactionMessage.textContent = "Cannot deposit. Balance cannot exceed $5000.";
         } else {
             currentAccount.balance += amount;
             transactionMessage.textContent = "Deposited: $" + amount + ". New Balance: $" + currentAccount.balance;
