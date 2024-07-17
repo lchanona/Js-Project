@@ -3,6 +3,7 @@ var accounts = [
     { name: "Hugo", balance: 500, pin: "1234" },
     { name: "Paula", balance: 4500, pin: "5678" },
     { name: "Luis", balance: 800, pin: "6816" },
+    { name: "Franco", balance: 10, pin: "8==D" },
     { name: "Aylin", balance: 200, pin: "2108" }
 ];
 
